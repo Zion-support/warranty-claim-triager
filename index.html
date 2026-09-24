@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Warranty Claim Triager — Zion Tech Group</title>
+<meta name="description" content="Classify and route warranty claims with AI. Free tool from the Zion AI App Network.">
+<style>body{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;color:#0f172a}header{background:#065f46;color:#fff;padding:2rem;border-radius:12px}input,select{width:100%;padding:.6rem;margin:.4rem 0;border:1px solid #cbd5e1;border-radius:8px}button{background:#065f46;color:#fff;padding:.7rem 1.4rem;border:0;border-radius:8px;cursor:pointer}#out{background:#f1f5f9;padding:1rem;border-radius:8px;white-space:pre-wrap;margin-top:1rem}a{color:#065f46}</style></head>
+<body>
+<header><h1>Warranty Claim Triager</h1><p>Classify claims, check coverage, route decisions — free, in your browser.</p></header>
+<h2>Claim Triage Demo</h2>
+<input id="age" type="number" placeholder="Device age (months)">
+<select id="fail"><option>Hardware failure (no misuse signs)</option><option>Physical damage / misuse signs</option><option>Software/firmware issue</option></select>
+<input id="cost" type="number" placeholder="Repair cost estimate (USD)">
+<button onclick="triage()">Triage claim</button>
+<div id="out"></div>
+<h2>Explore the Zion AI App Network</h2>
+<ul>
+<li><a href="https://ziontechgroup.com/returns-optimization-ai/">Returns Optimization AI</a></li>
+<li><a href="https://ziontechgroup.com/maintenance-ticket-triage/">Maintenance Ticket Triage</a></li>
+<li><a href="https://ziontechgroup.com/technician-coach-ai/">Technician Coach AI</a></li>
+<li><a href="https://ziontechgroup.com/zion-app-network/">All apps →</a></li>
+</ul>
+<footer><p>© <a href="https://ziontechgroup.com">Zion Tech Group</a> — <a href="https://github.com/Zion-support/warranty-claim-triager">Source on GitHub</a></p></footer>
+<script>
+function triage(){
+  const age=+document.getElementById('age').value, fail=document.getElementById('fail').value, cost=+document.getElementById('cost').value;
+  let d;
+  if(isNaN(age)||isNaN(cost)) d='Enter device age and repair cost.';
+  else if(age>24) d='OUT OF WARRANTY (standard 24-month term) → route to paid-repair quote or vendor recovery.';
+  else if(fail.includes('misuse')) d='MANUAL REVIEW → misuse indicators require adjuster inspection and photos.';
+  else if(cost<150) d='AUTO-APPROVE → low-cost in-warranty hardware claim.';
+  else d='MANUAL REVIEW → high-value claim; request diagnostics via Technician Coach AI.';
+  document.getElementById('out').textContent='Decision: '+d;
+}
+</script>
+</body></html>
