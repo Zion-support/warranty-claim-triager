@@ -27,9 +27,14 @@ Manufacturers, distributors and field-service organizations drowning in manual w
 
 - [returns-optimization-ai](https://github.com/Zion-support/returns-optimization-ai) — attack return root causes: https://ziontechgroup.com/returns-optimization-ai/
 - [maintenance-ticket-triage](https://github.com/Zion-support/maintenance-ticket-triage) — field-service intake: https://ziontechgroup.com/maintenance-ticket-triage/
+- [support-ticket-triager](https://github.com/Zion-support/support-ticket-triager) — support triage: https://ziontechgroup.com/support-ticket-triager/
+- [incident-runbook-ai](https://github.com/Zion-support/incident-runbook-ai) — executable incident runbooks: https://ziontechgroup.com/incident-runbook-ai/
 - [spare-price-scout](https://github.com/Zion-support/spare-price-scout) — source replacement parts: https://ziontechgroup.com/spare-price-scout/
 - [invoice-match-ai](https://github.com/Zion-support/invoice-match-ai) — catch duplicate billing: https://ziontechgroup.com/invoice-match-ai/
 - [sla-risk-forecaster](https://github.com/Zion-support/sla-risk-forecaster) — protect claim SLAs: https://ziontechgroup.com/sla-risk-forecaster/
 
 ---
+
+📓 Category: [AI Ops, Incident Response & Reliability](https://github.com/Zion-support/zion-network/blob/main/network/ai-ops-incident-response.md) · 📇 Master index: [APPS_NETWORK.md](https://github.com/Zion-support/zion-network/blob/main/APPS_NETWORK.md) · 📣 Spotlight: [AI Ops suite launch](https://github.com/Zion-support/zion-support.github.io/blob/main/APP_NETWORK_SPOTLIGHT_AIOPS.md)
+
 © 2026 Zion Tech Group · https://ziontechgroup.com/
